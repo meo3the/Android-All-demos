@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         if (view == btnBasicDemo) {
             startActivity(new Intent(this, BasicDemoActivity.class));
+
         }
     }
 }

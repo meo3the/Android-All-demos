@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_default_portrait_padding_horizontal"
-    android:paddingLeft="@dimen/activity_default_portrait_padding_vertical"
-    android:paddingRight="@dimen/activity_default_portrait_padding_vertical"
-    android:paddingTop="@dimen/activity_default_portrait_padding_horizontal">
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnBasicDemo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_btn_basic_demos"
-        android:layout_centerHorizontal="true"
-        />
+    <include layout="@layout/toolbar" />
 
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_default_portrait_padding_horizontal"
+        android:paddingLeft="@dimen/activity_default_portrait_padding_vertical"
+        android:paddingRight="@dimen/activity_default_portrait_padding_vertical"
+        android:paddingTop="@dimen/activity_default_portrait_padding_horizontal">
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/btnBasicDemo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/txt_btn_basic_demos" />
+
+    </RelativeLayout>
+</LinearLayout>
