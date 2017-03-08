@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    android:paddingBottom="@dimen/activity_default_portrait_padding_horizontal"
+    android:paddingLeft="@dimen/activity_default_portrait_padding_vertical"
+    android:paddingRight="@dimen/activity_default_portrait_padding_vertical"
+    android:paddingTop="@dimen/activity_default_portrait_padding_horizontal"
+    tools:context="m3t.namvp.demos.fragments.ArticleFragment">
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
